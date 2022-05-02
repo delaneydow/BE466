@@ -25,7 +25,6 @@ dxdt = zeros(3,1);        % ODE column Vector
 % ec503     = Half maximal effective concentration for heterodimer
 % kobs      = Exchange rate homo-/hetero-dimer
 
-%% Equations -- NEED TO MODIFY 
 
 % d[AA]/dt estradiol
 dxdt(1) = kact*[EstI]^nH_Est/([EstI]^nH_Est + ec501^nH_Est) - kdeg1*[AA_conc]; 
@@ -33,7 +32,7 @@ dxdt(1) = kact*[EstI]^nH_Est/([EstI]^nH_Est + ec501^nH_Est) - kdeg1*[AA_conc];
 % d[BB]/dt aldosterone
 dxdt(2) = kact*[AldI]^nH_Ald/([AldI]^nH_Ald + ec502^nH_Ald) - kdeg2*[BB_conc];
 
-%d[mKate]/dt                    (AB_conc = (AA_conc.*BB_conc./kobs).^0.5)
+%d[mKate]/dt                  
 dxdt(3) = kact*[(AA_conc.*BB_conc./kobs).^0.5]^nH_het/([(AA_conc.*BB_conc./kobs).^0.5]^nH_het + ec503^nH_het) - kdeg3*[MKATE2];
 
 end
