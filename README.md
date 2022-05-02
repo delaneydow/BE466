@@ -15,10 +15,19 @@ Synthetic biology is an emerging multidisciplinary field that involves the synth
 The following repository stores the code for the modeling component of our senior design project at Boston University, titled Designing, Modeling, and Constructing Coherence Detection Synthetic Gene Circuits Based on Protein Oligimerization. 
 The modeling component was based on a series of three experiments conducted to be used as training data on our model of a series of ordinary differential equations. The training data optimized specific parameters in our equations, and the outputs of the system were predicted on a different set of experiments to test the model's accuracy. 
 
-## How-To 
+## Navigating the Repository 
 The training data folder contains all of the datasets used for the training data, as well as the matlab files used to collect the predicted outputs. 
 
 The testing data folder contains all of the datasets used for the testing data, as well as the matlab files used to collect the predicted outputs. 
 
 The ZEV_Induction_ODE.m file was used to generate the ODE oututs for all functions in the training/testing data folders, hence why it is not in a specific folder. 
 The fitting.m file was used to measure the accuracy of the model in the testing vs. training data outputs. 
+
+## Suggested Readings and Follow Up Information
+
+C.J. Bashor, N. Patel, S. Choubey, A. Beyzavi, J. Kondev, J.J. Collins, A.S. Khalil, “Complex signal processing in synthetic gene circuits using cooperative regulatory assemblies.” Science, 364(6440):593-597, (2019).
+
+A.S. Khalil, J.J. Collins. “Synthetic biology: applications come of age.” The Sci and App of Syn and Sys Bio: Workshop Summ, 11:367-379, (2010).
+
+https://www.bu.edu/khalillab/
+
